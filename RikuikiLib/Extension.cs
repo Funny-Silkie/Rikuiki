@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace Rikuiki
 {
@@ -28,6 +27,46 @@ namespace Rikuiki
             return result;
         }
         public static T GenericClone<T>(this T value) where T : ICloneable => value != null ? (T)value.Clone() : default;
+        public static int Max<T>(this IEnumerable<T> collection, Func<T, int> converter)
+        {
+            var result = int.MinValue;
+            foreach (var current in collection)
+            {
+                var value = converter.Invoke(current);
+                if (result < value) result = value;
+            }
+            return result;
+        }
+        public static decimal Max<T>(this IEnumerable<T> collection, Func<T, decimal> converter)
+        {
+            var result = decimal.MinValue;
+            foreach (var current in collection)
+            {
+                var value = converter.Invoke(current);
+                if (result < value) result = value;
+            }
+            return result;
+        }
+        public static int Min<T>(this IEnumerable<T> collection, Func<T, int> converter)
+        {
+            var result = int.MaxValue;
+            foreach (var current in collection)
+            {
+                var value = converter.Invoke(current);
+                if (result > value) result = value;
+            }
+            return result;
+        }
+        public static decimal Min<T>(this IEnumerable<T> collection, Func<T, decimal> converter)
+        {
+            var result = decimal.MaxValue;
+            foreach (var current in collection)
+            {
+                var value = converter.Invoke(current);
+                if (result > value) result = value;
+            }
+            return result;
+        }
         public static decimal Sum<T>(this IEnumerable<T> collection, Func<T, decimal> converter)
         {
             var result = 0m;
