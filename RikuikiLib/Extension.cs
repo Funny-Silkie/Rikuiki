@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Rikuiki_Plant
+namespace Rikuiki
 {
     public static class Extension
     {

@@ -1,11 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <OutPutType>Exe</OutPutType>
-    <TargetFrameWork>netcoreapp3.1</TargetFrameWork>
+    <TargetFrameWork>netstandard2.1</TargetFrameWork>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <OutputPath>$(SolutionDir)Build/</OutputPath>
-    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <RootNamespace>Rikuiki</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
@@ -13,7 +10,4 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\RikuikiLib\RikuikiLib.csproj" />
-  </ItemGroup>
 </Project>

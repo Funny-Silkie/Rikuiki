@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Rikuiki_Plant
+namespace Rikuiki
 {
     [Serializable]
     public sealed class ReverseComparer<T> : IComparer<T>

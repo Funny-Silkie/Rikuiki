@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace Rikuiki_Plant
+namespace Rikuiki
 {
     [Serializable]
     public class Table : ICollection<string>, IReadOnlyCollection<string>, ICollection
