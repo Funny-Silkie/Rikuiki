@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30517.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rikuiki_Plant", "Rikuiki_Plant\Rikuiki_Plant.csproj", "{64089C7B-CBC9-43E0-AE85-098ACDAA445A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rikuiki_Animal", "Rikuiki_Animal\Rikuiki_Animal.csproj", "{6C45AFA1-98B5-48A5-A543-709FCD367000}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rikuiki_Pitfall", "Rikuiki_Animal\Rikuiki_Pitfall.csproj", "{6C45AFA1-98B5-48A5-A543-709FCD367000}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RikuikiLib", "RikuikiLib\RikuikiLib.csproj", "{90AEE191-91A0-4743-ACEB-6A92D19B8D6D}"
 EndProject

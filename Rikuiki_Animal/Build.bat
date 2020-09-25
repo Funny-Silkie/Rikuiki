@@ -1,2 +1,2 @@
-dotnet build Rikuiki_Animal.csproj -c Debug
-dotnet build Rikuiki_Animal.csproj -c Release
+dotnet build Rikuiki_Pitfall.csproj -c Debug
+dotnet build Rikuiki_Pitfall.csproj -c Release
