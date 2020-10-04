@@ -44,7 +44,7 @@ namespace Rikuiki_Plant
             {
                 if (dbhMax < current) dbhMax = current;
                 sum += current;
-                ba += current * current / 4m / (decimal)Math.PI / 10000m;
+                ba += current * current / 4m * (decimal)Math.PI / 10000m;
             }
             dbhAve = sum / dbhs.Count;
             return true;

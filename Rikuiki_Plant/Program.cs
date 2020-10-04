@@ -67,15 +67,16 @@ namespace Rikuiki_Plant
                 var dictionary = new Dictionary<string, TreeInfo>();
                 for (int i = 2; i < table.CountY; i++)
                 {
-                    if (!dictionary.TryGetValue(table[3, i], out var info))
-                    {
-                        info = new TreeInfo(table[3, i]);
-                        dictionary.Add(info.Name, info);
-                    }
                     if (!decimal.TryParse(table[4, i], out var dbh))
                     {
                         Console.WriteLine($"DBH‚Ì’l‚ðŽæ‚èo‚¹‚Ü‚¹‚ñ‚Å‚µ‚½(X={5},Y={i + 1})");
                         continue;
+                    }
+                    if (dbh < 5m) continue;
+                    if (!dictionary.TryGetValue(table[3, i], out var info))
+                    {
+                        info = new TreeInfo(table[3, i]);
+                        dictionary.Add(info.Name, info);
                     }
                     info.Add(table[0, i], dbh);
                 }
